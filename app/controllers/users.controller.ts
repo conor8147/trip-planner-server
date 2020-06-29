@@ -1,6 +1,4 @@
-import express = require('express');
-
-const users = require('../models/users.model.ts');
+const usersModel = require('../models/users.model');
 
 /**
  * Checks only that a candidate email address contains the @ symbol.
@@ -15,14 +13,14 @@ function isEmailValid(email: string) {
  * @param req an express request. Body should contain an email address and hashed password.
  * @param res an express response with status 200 if login succeeds, 400 if failed.
  */
-exports.login = async function (req: express.Request, res: express.Response) {
+exports.login = async function (req: any, res: any) {
     // Handle login here
 };
 
-exports.logout = async function (req: express.Request, res: express.Response) {
+exports.logout = async function (req: any, res: any) {
     // Handle logout here
 };
 
-exports.register = async function (req: express.Request, res: express.Response) {
+exports.register = async function (req: any, res: any) {
     // Handle register here
 };

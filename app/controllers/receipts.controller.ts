@@ -1,15 +1,13 @@
-import express = require('express');
+const receiptsModel = require('../models/receipts.model');
 
-const receipts = require('../models/receipts.model.ts');
-
-exports.retrieve = async function (req: express.Request, res: express.Response) {
+exports.retrieve = async function (req: any, res: any) {
     // Handle getting single receipt here
 };
 
-exports.delete = async function (req: express.Request, res: express.Response) {
+exports.delete = async function (req: any, res: any) {
     // handle deleting receipt by id here
 };
 
-exports.create = async function (req: express.Request, res: express.Response) {
+exports.create = async function (req: any, res: any) {
     // handle creating a new receipt here
 };

@@ -1,8 +1,10 @@
+import {Express} from "express";
+
 require('dotenv').config();
 //const db = require('./config/db');
-const express = require('./config/express.ts');
+const ourExpress = require('./config/express');
 
-const app = express();
+const app = ourExpress();
 const port = process.env.PORT || 4941;
 
 app.listen(port, function () {

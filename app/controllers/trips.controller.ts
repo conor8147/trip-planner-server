@@ -1,19 +1,18 @@
-import express = require('express');
+import {Request, Response} from 'express'
+const tripsModel = require('../models/trips.model');
 
-const trips = require('../models/trips.model.ts')
-
-exports.retrieve = async function (req: express.Request, res: express.Response) {
+exports.retrieve = async function (req: Request, res: Response) {
     // Handle getting single trip info
 };
 
-exports.getAll = async function (req: express.Request, res: express.Response) {
+exports.getAll = async function (req: Request, res: Response) {
     // Handle getting all trips for the user.
 };
 
-exports.delete = async function (req: express.Request, res: express.Response) {
+exports.delete = async function (req: Request, res: Response) {
     // Handle deleting trip by id
 };
 
-exports.create = async function (req: express.Request, res: express.Response) {
+exports.create = async function (req: Request, res: Response) {
     // Handle creating a new trip
 };
