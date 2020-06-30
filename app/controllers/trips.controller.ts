@@ -2,12 +2,14 @@ import {Request, Response} from 'express'
 const tripsModel = require('../models/trips.model');
 
 exports.retrieve = async function (req: Request, res: Response) {
-    // Handle getting single trip info
+
 };
 
 exports.getAll = async function (req: Request, res: Response) {
-    // Handle getting all trips for the user.
-};
+    const message: any = { "message":  "hi jasmine" };
+    res.statusMessage = 'OK';
+    res.status(200)
+        .json(message);};
 
 exports.delete = async function (req: Request, res: Response) {
     // Handle deleting trip by id

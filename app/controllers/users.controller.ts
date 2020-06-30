@@ -14,7 +14,7 @@ function isEmailValid(email: string) {
  * @param res an express response with status 200 if login succeeds, 400 if failed.
  */
 exports.login = async function (req: any, res: any) {
-    // Handle login here
+
 };
 
 exports.logout = async function (req: any, res: any) {
